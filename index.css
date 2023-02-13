@@ -1,0 +1,53 @@
+:root {
+  --bg-color: #00264e;
+  --body-color: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--body-color);
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.content {
+  max-width: 800px;
+  margin: 5rem 0 0 15rem;
+}
+
+.logo {
+  width: 15vw;
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    margin: 5rem auto 0 auto;
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    width: 50vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
